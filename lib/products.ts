@@ -1063,7 +1063,7 @@ export const SEED_PRODUCTS: Product[] = [
       "Creamy sandalwood softened by vanilla and iris. A modern classic with quiet confidence.",
     notes: ["Sandalwood","Vanilla","Iris","Cedar"],
     stock: 38,
-    featured: true,
+    featured: false,
   },
   {
     slug: "ambre-royale",

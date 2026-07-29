@@ -18,7 +18,7 @@ export function BestSellers({ products }: { products: Product[] }) {
       </div>
 
       {/* Mobile: snap carousel */}
-      <div className="snap-row pl-4 pr-4 sm:hidden">
+      <div className="snap-row px-4 sm:hidden">
         {products.map((product) => (
           <ProductCard
             key={product.slug}
@@ -28,8 +28,8 @@ export function BestSellers({ products }: { products: Product[] }) {
         ))}
       </div>
 
-      {/* Tablet+ grid */}
-      <div className="mx-auto hidden max-w-7xl grid-cols-3 gap-x-4 gap-y-10 px-4 sm:grid md:grid-cols-4 lg:grid-cols-5 lg:px-6">
+      {/* Tablet+: 5-col grid matching featured count */}
+      <div className="mx-auto hidden max-w-7xl grid-cols-5 gap-x-3 gap-y-10 px-4 sm:grid md:gap-x-4 lg:gap-x-5 lg:px-6">
         {products.map((product) => (
           <ProductCard key={product.slug} product={product} />
         ))}

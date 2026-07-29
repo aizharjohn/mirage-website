@@ -47,18 +47,18 @@ export function Features() {
         ))}
       </div>
 
-      {/* Tablet+ */}
-      <div className="mx-auto hidden max-w-7xl gap-6 px-4 py-10 sm:grid sm:grid-cols-3 md:gap-8 lg:grid-cols-5 lg:px-6">
+      {/* Tablet+: single aligned row of 5 */}
+      <div className="mx-auto hidden max-w-7xl grid-cols-5 gap-3 px-4 py-10 sm:grid md:gap-6 lg:gap-8 lg:px-6">
         {FEATURES.map((f) => (
           <div
             key={f.title}
             className="flex flex-col items-center text-center"
           >
             <f.icon className="mb-3 size-7 text-ink" strokeWidth={1.25} />
-            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-ink">
+            <p className="text-[10px] font-medium uppercase tracking-[0.14em] text-ink md:text-[11px] md:tracking-[0.18em]">
               {f.title}
             </p>
-            <p className="mt-1 text-xs text-muted">{f.text}</p>
+            <p className="mt-1 text-[11px] text-muted md:text-xs">{f.text}</p>
           </div>
         ))}
       </div>

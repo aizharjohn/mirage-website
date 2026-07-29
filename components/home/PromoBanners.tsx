@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function PromoBanners() {
   return (
-    <section className="mx-auto grid max-w-7xl gap-3 px-3 pb-12 sm:grid-cols-2 sm:gap-4 sm:px-4 sm:pb-16 lg:gap-6 lg:px-6 lg:pb-20">
+    <section className="mx-auto grid max-w-7xl gap-3 px-4 pb-12 sm:grid-cols-2 sm:gap-4 sm:pb-16 lg:gap-6 lg:px-6 lg:pb-20">
       <div className="relative flex min-h-[260px] flex-col justify-center overflow-hidden bg-cream-dark px-5 py-10 sm:min-h-[300px] sm:px-8 sm:py-12 md:min-h-[320px] md:px-10">
         <div className="relative z-10 max-w-[220px] sm:max-w-xs">
           <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-gold-dark sm:text-[11px] sm:tracking-[0.22em]">

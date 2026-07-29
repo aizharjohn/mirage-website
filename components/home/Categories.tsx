@@ -49,12 +49,12 @@ function CategoryItem({
   const circle =
     size === "sm"
       ? "mb-3 size-24"
-      : "mb-3 size-28 sm:mb-4 sm:size-32 md:size-36";
+      : "mb-3 aspect-square w-[min(100%,9rem)] sm:mb-4 md:w-[min(100%,10rem)]";
 
   return (
     <Link
       href={cat.href}
-      className="group flex flex-col items-center text-center"
+      className="group flex w-full max-w-[10rem] flex-col items-center text-center"
     >
       <div
         className={`relative overflow-hidden rounded-full border border-border ${circle}`}
@@ -64,7 +64,7 @@ function CategoryItem({
           alt={cat.title}
           fill
           className="object-cover transition duration-500 group-hover:scale-110"
-          sizes="144px"
+          sizes="160px"
         />
       </div>
       <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-ink sm:text-[12px] sm:tracking-[0.18em]">
@@ -81,7 +81,7 @@ export function Categories() {
   return (
     <section className="border-t border-border bg-cream-dark/40 py-12 sm:py-16 lg:py-20">
       {/* Mobile snap */}
-      <div className="snap-row justify-start gap-6 px-4 sm:hidden">
+      <div className="snap-row gap-5 px-4 sm:hidden">
         {CATEGORIES.map((cat) => (
           <div key={cat.title} className="w-[28vw] min-w-[100px]">
             <CategoryItem cat={cat} size="sm" />
@@ -89,8 +89,8 @@ export function Categories() {
         ))}
       </div>
 
-      {/* Tablet+ */}
-      <div className="mx-auto hidden max-w-7xl flex-wrap justify-center gap-8 px-4 sm:flex sm:gap-10 md:justify-between lg:px-6">
+      {/* Tablet+: evenly spaced single row */}
+      <div className="mx-auto hidden max-w-7xl grid-cols-5 items-start justify-items-center gap-4 px-4 sm:grid md:gap-6 lg:gap-8 lg:px-6">
         {CATEGORIES.map((cat) => (
           <CategoryItem key={cat.title} cat={cat} />
         ))}
