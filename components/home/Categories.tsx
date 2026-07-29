@@ -7,35 +7,35 @@ const CATEGORIES = [
     href: "/shop?gender=her",
     cta: "Shop Now",
     image:
-      "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600&q=80",
+      "https://images.unsplash.com/photo-1630573133526-8d090e0269af?w=600&q=80",
   },
   {
     title: "For Him",
     href: "/shop?gender=him",
     cta: "Shop Now",
     image:
-      "https://images.unsplash.com/photo-1588405748880-12d1d2a52d75?w=600&q=80",
+      "https://images.unsplash.com/photo-1732828912683-57104a2d1b4b?w=600&q=80",
   },
   {
     title: "Collections",
     href: "/shop?category=collections",
     cta: "Explore",
     image:
-      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&q=80",
+      "https://images.unsplash.com/photo-1718466044521-d38654f3ba0a?w=600&q=80",
   },
   {
     title: "Gift Sets",
     href: "/shop?category=gift-sets",
     cta: "Shop Now",
     image:
-      "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=600&q=80",
+      "https://images.unsplash.com/photo-1622618991746-fe6004db3a47?w=600&q=80",
   },
   {
     title: "New Arrivals",
     href: "/shop?category=new-arrivals",
     cta: "Explore",
     image:
-      "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=600&q=80",
+      "https://images.unsplash.com/photo-1768025719875-48ed072f3084?w=600&q=80",
   },
 ];
 
